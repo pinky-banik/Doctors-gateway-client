@@ -1,9 +1,10 @@
 import React from 'react';
 import {Container, Grid, Typography} from "@mui/material"
-import MuiButton from '../../../StyledComponent/MuiButton';
+
 import chairimg from "../../../images/chair.png";
 import bg from "../../../images/bg.png";
 import "./Banner.css";
+import MuiButton from '../../Shared/StyledComponent/MuiButton';
 const Banner = () => {
    const style={
     minHeight:500,

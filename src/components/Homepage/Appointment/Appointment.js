@@ -2,8 +2,9 @@ import { Container, Grid, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import React from 'react';
 import doctorImg from "../../../images/doctor.png";
-import MuiButton from '../../../StyledComponent/MuiButton';
+
 import bg  from "../../../images/appointment-bg.png";
+import MuiButton from '../../Shared/StyledComponent/MuiButton';
 
 const Appointment = () => {
     const useStyle = makeStyles({

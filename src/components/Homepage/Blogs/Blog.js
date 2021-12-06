@@ -7,7 +7,7 @@ const Blogs = () => {
     return (
        <section className="blogs">
            <div className="container ">
-               <div  className="section-header">
+               <div  className="section-header text-center">
                     <h5 style={{color:"#19D3AE"}} className="fw-bold text-uppercase">our blog</h5>
                     <h1 className="fw-bold">From Our Blog News</h1>
                </div>

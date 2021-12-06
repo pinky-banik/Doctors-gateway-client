@@ -4,8 +4,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GoogleIcon from '@mui/icons-material/Google';
 import { makeStyles } from '@mui/styles';
-import MuiButton from '../../../StyledComponent/MuiButton';
 import bg from '../../../images/footer-bg.png'
+import MuiButton from '../StyledComponent/MuiButton';
 const useStyle = makeStyles({
     root: {
         background: `url(${bg})`,

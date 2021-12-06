@@ -5,6 +5,7 @@ import Appointment from '../Appointment/Appointment';
 import Banner from '../Banner/Banner';
 import Blogs from '../Blogs/Blog';
 import Contact from '../Contact/Contact';
+import Doctors from '../Doctors/Doctors';
 import Exceptional from '../Exceptional/Exceptional';
 import InfoCard from '../InfoCard/InfoCard';
 
@@ -17,6 +18,7 @@ const Home = () => {
          <Exceptional></Exceptional>
          <Appointment></Appointment>
          <Blogs></Blogs>
+         <Doctors></Doctors>
          <Contact></Contact>
          <Footer></Footer>
         </div>

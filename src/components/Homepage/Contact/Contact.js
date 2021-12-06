@@ -1,8 +1,9 @@
 import { Container, TextField, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import React from 'react';
-import MuiButton from '../../../StyledComponent/MuiButton';
+
 import bg from '../../../images/bg.png'
+import MuiButton from '../../Shared/StyledComponent/MuiButton';
 const Contact = () => {
     const useStyle = makeStyles({
         root: {

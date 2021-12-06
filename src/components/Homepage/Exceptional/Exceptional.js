@@ -1,6 +1,6 @@
 import React from 'react';
 import featuredImg from '../../../images/featured.png'
-import MuiButton from '../../../StyledComponent/MuiButton';
+import MuiButton from '../../Shared/StyledComponent/MuiButton';
 const Exceptional = () => {
     return (
         <section className="features-service mt-5 pb-lg-5 ">
