@@ -19,7 +19,9 @@ const Contact = () => {
             width: '100%',
             margin: '20px 0',
             borderRadius: 3,
-            padding: 15
+            padding: 15,
+            fontFamily: "roboto",
+            color:"gray"
         }
     })
     const { root, textArea } = useStyle()

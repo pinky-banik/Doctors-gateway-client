@@ -3,10 +3,11 @@ import {Container, Grid, Typography} from "@mui/material"
 import MuiButton from '../../../StyledComponent/MuiButton';
 import chairimg from "../../../images/chair.png";
 import bg from "../../../images/bg.png";
+import "./Banner.css";
 const Banner = () => {
    const style={
     minHeight:500,
-    height:"100vh",
+    height:"90vh",
      display:"flex",
      alignItems:"center",
      background:`url(${bg})`
@@ -14,8 +15,8 @@ const Banner = () => {
 
 
     return (
-        <div style={style}>
-            <Container>
+        <div style={style} className="banner-container">
+            <Container className="container-fluid w-75">
                 <Grid container spacing={2} sx={{alignItems:"center"}}>
                     <Grid item xs={12} sm={12} md ={6} lg ={6}>
                      <Typography variant="h4" sx={{fontWeight: 600}}>

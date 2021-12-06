@@ -6,8 +6,8 @@ import { infoData } from '../../../Data/Data';
  
 const InfoCard = () => {
     return (
-        <div>
-            <Container>
+        <div style={{marginTop:"-5%"}}>
+            <Container className="container-fluid w-75">
                 <Grid container spacing={3}>
                     {
                        infoData.map(({Icon,title,description,background})=>

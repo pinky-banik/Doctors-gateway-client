@@ -14,8 +14,8 @@ const Appointment = () => {
             height: 450,
             display: 'flex',
             alignItems: 'center',
-            marginBottom: 200,
-            marginTop: 200
+            marginBottom: 100,
+            marginTop: 100
         }
     })
     const {root}=useStyle()
@@ -23,7 +23,7 @@ const Appointment = () => {
         <div className={root}>
             <Container>
              <Grid container spacing={2} sx={{alignItems:"center"}}>
-                <Grid item xs={12} sm={12} md={5} lg={5}>
+                <Grid item xs={12} sm={12} md={5} lg={5} className="img-fluid d-none d-lg-block" >
                     <img src={doctorImg} alt="doctor" width="90%" style={{marginTop:-65}} />
                 </Grid>
                 <Grid item xs={12} sm={12} md={7} lg={7}  >
