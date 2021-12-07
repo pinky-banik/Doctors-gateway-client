@@ -62,16 +62,19 @@ export const blogsData = [
 
 export const serviceData = [
     {
-        name: 'Fluoride Treatment',
-        img: fluoride
+        name : 'Floride Treatment',
+        img : 'https://imgur.com/jASEb0l.png',
+        description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, rerum? Aspernatur, ut ipsam! Provident, quod molestias illum optio cumque  ! '
     },
     {
-        name: 'Cavity Filling',
-        img: cavity
+        name : 'Cavity Filling',
+        img : 'https://imgur.com/NJhXMx5.png',
+        description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, rerum? Aspernatur, ut ipsam! Provident, quod molestias illum optio cumque  ! '
     },
     {
-        name: 'Teeth Whitening',
-        img: whitening
+        name : 'Teth Whiting',
+        img : 'https://imgur.com/L3meLFc.png',
+        description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, rerum? Aspernatur, ut ipsam! Provident, quod molestias illum optio cumque  ! '
     }
 ]
 
@@ -117,3 +120,26 @@ export const bookings = [
         space: 10,
     },
 ]
+
+const testimonials = [
+    {
+        quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
+        name : 'Winson Harry',
+        from : 'California',
+        img : 'https://imgur.com/Zt8inGj.png'
+    },
+    {
+        quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
+        name : 'Henry Gomez',
+        from : 'California',
+        img : 'https://imgur.com/GLJS9vL.png'
+    },
+    {
+        quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
+        name : 'Aliza Farari',
+        from : 'California',
+        img : 'https://imgur.com/wXJ3Xta.png'
+    }
+]
+
+export default testimonials;

@@ -1,0 +1,9 @@
+
+@media screen and (max-width: 400px) {
+    .title {
+      display: none;
+    }
+  }
+  .navbar{
+    margin-bottom: 5%;
+  }
