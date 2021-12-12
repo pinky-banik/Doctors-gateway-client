@@ -1,12 +1,6 @@
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import WifiCalling3Icon from '@mui/icons-material/WifiCalling3';
-import person1 from '../images/people-1.png'
-import person2 from '../images/people-2.png'
-import person3 from '../images/people-3.png'
-import fluoride from '../images/fluoride.png';
-import cavity from '../images/cavity.png';
-import whitening from '../images/whitening.png';
 export const infoData = [
     {
         title: 'Opening Hours',

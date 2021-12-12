@@ -4,7 +4,7 @@ import "./Blogpost.css";
 const BlogPost = (props) => {
     const {title, description, author, authorImg , date} = props.blog;
     return (
-        <div className="card shadow-sm m-5 ">
+        <div className="card  shadow-sm m-5 ">
             <div className="card-header d-flex">
                 <img className="mx-3" src={authorImg} alt="" width="60"/>
                 <div>

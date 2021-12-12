@@ -20,7 +20,7 @@
     background-position: right top;
     background-size: 50%;
     color: #fff !important;
-    transition:  .1s  all ease-in-out !important;
+    transition:  .5s  all ease-in-out !important;
 }
 .blogs .card:hover h6,
 .blogs .card:hover p
