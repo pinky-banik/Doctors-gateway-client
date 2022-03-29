@@ -14,17 +14,17 @@ const LoginPage = () => {
             <div className='col-md-12 col-lg-6 d-flex align-items-center justify-content-center p-5' style={{boxShadow:"2px gray"}} >
             <form onSubmit={handlesubmit}>
                 <div className="mb-3">
-                    <label for="exampleInputEmail1" className="form-label">Email address</label>
+                    <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                     <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div className="mb-3">
-                    <label for="exampleInputPassword1" className="form-label">Password</label>
+                    <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                     <input type="password" className="form-control" id="exampleInputPassword1" />
                 </div>
                 <div className="mb-3 form-check">
                     <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                    <label className="form-check-label text-danger" for="exampleCheck1">Forget password?</label>
+                    <label className="form-check-label text-danger" htmlFor="exampleCheck1">Forget password?</label>
                 </div>
                 <MuiButton type="submit"  fullWidth>Submit</MuiButton>
 

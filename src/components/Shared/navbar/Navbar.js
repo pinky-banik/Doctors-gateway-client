@@ -1,35 +1,47 @@
 import React from 'react';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import {NavLink, Link } from 'react-router-dom';
 import logo from "../../../images/doctor-14109.png";
 
 import "./Navbar.css";
-const Navbar = () => {
+const Navigationbar = () => {
     return (
         <div>
-            <nav className="fixed-top navbar navbar-expand-lg navbar-dark px-5 mb-5" style={{backgroundColor: "#3A4256"}}>
-            <div className="container-fluid">
-                <a className="navbar-brand" href="/"><img className="" src={logo} alt="" /><span className="title text-white fw-bold">  Doctors Getway </span></a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul></ul>
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                    <Link to="/appointment"><a className="nav-link active" aria-current="page" href='//'>Appointment</a></Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link to="/signup"><a className="nav-link active" aria-current="page" href='//'>Sign Up</a></Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link to="/login"><a className="nav-link active" aria-current="page" href='//'>login</a></Link>
-                    </li>
-                </ul>
-                </div>
-            </div>
-            </nav>
+            <Navbar variant="light" className="sticky-top" expand="lg" style={{backgroundColor:"darkcyan"}}>
+            <Container>
+            <Navbar.Brand><Nav.Link as={NavLink} to="/home" href="#"><img className="w-10" src={logo} alt="" /><span className="title text-black fs-2 fw-bold">Doctors Gateway</span> </Nav.Link></Navbar.Brand>
+
+
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+
+   
+            <Nav className="ms-auto text-center">
+            <Nav.Link style={{color:'#000', fontWeight:'600'}}  as={Link} to="/">Home</Nav.Link>
+
+            <Nav.Link style={{color:'#000', fontWeight:'600'}}  as ={NavLink} to="/appointment" >Appointment</Nav.Link>
+            <Nav.Link style={{color:'#000', fontWeight:'600'}}  as ={NavLink} to="/login" >Login</Nav.Link>
+            {/* {
+                user?.email && 
+                <Nav.Link style={{color:'#DFFF00', fontWeight:'600'}}  as ={NavLink} to="/mainboard" ><Button style={{borderRadius:"50px"}} className="btn btn-success"  >Dashboard</Button></Nav.Link>
+            }
+            {
+                user?.email ? 
+                <Nav.Link><Button className="btn btn-danger" style={{ fontWeight:'600', borderRadius:"50px"}} onClick={logOut}   >LogOut </Button></Nav.Link>
+                :
+                <Button style={{fontWeight:'600'}} className="btn btn-white" as ={NavLink} to="/login">Login</Button>
+            }
+            {
+                user?.email && <Nav.Link style={{fontWeight:'600' , borderRadius:"50px"}}  as ={NavLink} to="/mainboard" >{user.displayName}</Nav.Link>
+            } */}
+                    </Nav>
+
+        </Navbar.Collapse>
+        </Container>
+        </Navbar>
+
         </div>
     );
 };
 
-export default Navbar;
+export default Navigationbar;

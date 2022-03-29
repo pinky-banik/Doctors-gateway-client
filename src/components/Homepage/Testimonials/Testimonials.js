@@ -13,7 +13,9 @@ const Testimonials = () => {
                </div>
                <div className="card-deck mt-5 d-lg-flex">
                     {
-                        testimonials.map(testimonial => <Testimonial testimonial={testimonial}/>)
+                        testimonials.map(testimonial => <Testimonial
+                            key={testimonial.id}
+                            testimonial={testimonial}/>)
                     }
                 </div>
            </div>

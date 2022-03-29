@@ -2,19 +2,22 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import WifiCalling3Icon from '@mui/icons-material/WifiCalling3';
 export const infoData = [
-    {
+    {   
+        id:1,
         title: 'Opening Hours',
         description: 'We are open 7 days',
         Icon: AccessTimeIcon,
         background: '#1CC7C1'
     },
     {
+        id:2,
         title: 'Visit Our Location',
         description: 'Brooklyn, NY 10003 USA',
         Icon: LocationOnIcon,
         background: '#3A4256'
     },
     {
+        id:3,
         title: 'Call us now',
         description: '+15697854124',
         Icon: WifiCalling3Icon,
@@ -30,20 +33,24 @@ export const infoData = [
 
 export const blogsData = [
     {
+        id :1,
         title : 'Check at least a doctor in a year for your teeth',
         description : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, placeat totam laborum maiores, esse assumenda porro error natus sit ipsam.        ',
         author:'Dr. Cudi',
         authorImg : 'https://imgur.com/Zt8inGj.png',
         date : '23 April 2019'
     },
-    {
+    {   
+        id:2,
         title : 'Two time brush in a day can keep you healthy',
         description : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, placeat totam laborum maiores, esse assumenda porro error natus sit ipsam.        ',
         author:'Dr. Sinthia',
         authorImg : 'https://imgur.com/wXJ3Xta.png',
         date : '23 April 2019'
     },
-    {
+    {   
+
+        id : 3,
         title : 'The tooth cancer is taking a challenge',
         description : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, placeat totam laborum maiores, esse assumenda porro error natus sit ipsam.        ',
         author:'Dr. Cudi',
@@ -55,17 +62,20 @@ export const blogsData = [
 
 
 export const serviceData = [
-    {
+    {   
+        id :1,
         name : 'Floride Treatment',
         img : 'https://imgur.com/jASEb0l.png',
         description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, rerum? Aspernatur, ut ipsam! Provident, quod molestias illum optio cumque  ! '
     },
     {
+        id:2,
         name : 'Cavity Filling',
         img : 'https://imgur.com/NJhXMx5.png',
         description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, rerum? Aspernatur, ut ipsam! Provident, quod molestias illum optio cumque  ! '
-    },
-    {
+    }, 
+    {   
+        id :3,
         name : 'Teth Whiting',
         img : 'https://imgur.com/L3meLFc.png',
         description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, rerum? Aspernatur, ut ipsam! Provident, quod molestias illum optio cumque  ! '
@@ -116,19 +126,22 @@ export const bookings = [
 ]
 
 const testimonials = [
-    {
+    {   
+        id :1,
         quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
         name : 'Winson Harry',
         from : 'California',
         img : 'https://imgur.com/Zt8inGj.png'
     },
-    {
+    {   
+        id:2,
         quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
         name : 'Henry Gomez',
         from : 'California',
         img : 'https://imgur.com/GLJS9vL.png'
     },
     {
+        id:3,
         quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
         name : 'Aliza Farari',
         from : 'California',

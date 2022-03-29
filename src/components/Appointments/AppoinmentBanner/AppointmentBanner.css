@@ -1,5 +1,5 @@
-.banner-container::after {
-    height: 90%;
+.appoinmentBanner-container{
+    height: 80%;
     content: " ";
     position: absolute;
     top: 0;

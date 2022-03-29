@@ -8,7 +8,7 @@ import MuiButton from '../../Shared/StyledComponent/MuiButton';
 const Banner = () => {
    const style={
     minHeight:500,
-    height:"90vh",
+    height:"80vh",
      display:"flex",
      alignItems:"center",
      background:`url(${bg})`
@@ -16,7 +16,7 @@ const Banner = () => {
 
 
     return (
-        <div style={style} className="banner-container mt-5">
+        <div style={style} className="banner-container">
             <Container className="container-fluid w-75">
                 <Grid container spacing={2} sx={{alignItems:"center"}}>
                     <Grid item xs={12} sm={12} md ={6} lg ={6}>

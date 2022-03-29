@@ -13,7 +13,9 @@ const Blogs = () => {
                </div>
                <div className="card-deck mt-5 d-lg-flex ">
                     {
-                        blogsData.map(blog => <BlogPost blog={blog}/>)
+                        blogsData.map(blog => <BlogPost
+                            key={blog.id}
+                            blog={blog}/>)
                     }
                </div>
            </div>

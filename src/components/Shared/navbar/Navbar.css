@@ -1,9 +1,15 @@
 
 @media screen and (max-width: 400px) {
-    .title {
-      display: none;
-    }
+  .title {
+    display: none;
   }
+}
   .navbar{
-    margin-bottom: 5%;
+    text-decoration: n;
   }
+
+  .routes {
+    color: m ;
+    text-decoration: none;
+  }
+

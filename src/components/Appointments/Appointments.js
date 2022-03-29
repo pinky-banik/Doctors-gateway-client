@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Footer from '../Shared/Footer/Footer';
 import Navbar from '../Shared/navbar/Navbar';
 import AppointmentBanner from './AppoinmentBanner/AppointmentBanner';
-import Booking from './Booking/Booking';
+import AvaibleAppointments from './AvailableAppointments/AvaibleAppointments';
 
 const Appointments = () => {
     
@@ -11,10 +11,10 @@ const Appointments = () => {
 
 
     return (
-        <div>
+        <div >
             <Navbar></Navbar>
              <AppointmentBanner date={date} setDate={setDate}></AppointmentBanner>
-             <Booking date={date}></Booking>
+             <AvaibleAppointments date={date}></AvaibleAppointments>
             <Footer></Footer>
         </div>
     );

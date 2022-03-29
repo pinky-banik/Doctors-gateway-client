@@ -15,8 +15,9 @@ const Appointment = () => {
             height: 450,
             display: 'flex',
             alignItems: 'center',
-            marginBottom: 100,
-            marginTop: 100
+            marginBottom: 200,
+            marginTop: 200,
+
         }
     })
     const {root}=useStyle()
