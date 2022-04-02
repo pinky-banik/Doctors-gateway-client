@@ -2,9 +2,12 @@ import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import {NavLink, Link } from 'react-router-dom';
 import logo from "../../../images/doctor-14109.png";
+import useAuth from '../../Hooks/useAuth';
 
 import "./Navbar.css";
+import MuiButton from './../StyledComponent/MuiButton';
 const Navigationbar = () => {
+    const {logout,user} = useAuth();
     return (
         <div>
             <Navbar variant="light" className="sticky-top" expand="lg" style={{backgroundColor:"darkcyan"}}>
@@ -20,20 +23,19 @@ const Navigationbar = () => {
             <Nav.Link style={{color:'#000', fontWeight:'600'}}  as={Link} to="/">Home</Nav.Link>
 
             <Nav.Link style={{color:'#000', fontWeight:'600'}}  as ={NavLink} to="/appointment" >Appointment</Nav.Link>
-            <Nav.Link style={{color:'#000', fontWeight:'600'}}  as ={NavLink} to="/login" >Login</Nav.Link>
-            {/* {
+            {
                 user?.email && 
                 <Nav.Link style={{color:'#DFFF00', fontWeight:'600'}}  as ={NavLink} to="/mainboard" ><Button style={{borderRadius:"50px"}} className="btn btn-success"  >Dashboard</Button></Nav.Link>
             }
             {
                 user?.email ? 
-                <Nav.Link><Button className="btn btn-danger" style={{ fontWeight:'600', borderRadius:"50px"}} onClick={logOut}   >LogOut </Button></Nav.Link>
+                <Nav.Link><MuiButton className="btn btn-danger" style={{ fontWeight:'600', borderRadius:"50px"}} onClick={logout}   >LogOut </MuiButton></Nav.Link>
                 :
-                <Button style={{fontWeight:'600'}} className="btn btn-white" as ={NavLink} to="/login">Login</Button>
+                <MuiButton style={{fontWeight:'600'}} className="btn btn-white" as ={NavLink} to="/login">Login</MuiButton>
             }
             {
                 user?.email && <Nav.Link style={{fontWeight:'600' , borderRadius:"50px"}}  as ={NavLink} to="/mainboard" >{user.displayName}</Nav.Link>
-            } */}
+            }
                     </Nav>
 
         </Navbar.Collapse>

@@ -8,9 +8,11 @@ import {
 import './App.css';
 import Appointments from "./components/Appointments/Appointments";
 import AuthProvider from "./components/Contexts/AuthProvider";
+import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
 
 import Home from "./components/Homepage/Home/Home";
 import LoginPage from "./components/Shared/Login/LoginPage/LoginPage";
+import PrivateRoute from "./components/Shared/Login/PrivateRoute/PrivateRoute";
 import Register from "./components/Shared/Login/Register/Register";
 
 function App() {
@@ -19,10 +21,13 @@ function App() {
       <AuthProvider>
       <Router>
         <Switch>
-        <Route path="/appointment">
+        <PrivateRoute path="/appointment">
             <Appointments></Appointments>
-          </Route>
-          <Route path="/signup">
+          </PrivateRoute>
+          <PrivateRoute path="/mainboard">
+            <Dashboard></Dashboard>
+          </PrivateRoute>
+          <Route path="/register">
             <Register></Register>
           </Route>
           <Route path="/login">
